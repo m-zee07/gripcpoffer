@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hulu Card Now Giveaway - Claim Your $100 Hulu Card Now Now!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #feca57 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .card-gradient {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: .8;
+            }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(2deg);
+            }
+        }
+        
+        .shimmer {
+            background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.5) 50%, transparent 100%);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+        
+        .countdown {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .sparkle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: white;
+            border-radius: 50%;
+            animation: sparkle 2s linear infinite;
+            box-shadow: 0 0 10px rgba(255,255,255,0.8);
+        }
+        
+        @keyframes sparkle {
+            0% {
+                transform: translateY(0) scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-120px) scale(1.5);
+                opacity: 0;
+            }
+        }
+        
+        .rainbow-text {
+            background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow 3s ease infinite;
+        }
+        
+        @keyframes rainbow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .neon-border {
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.3);
+            border: 2px solid rgba(255, 0, 255, 0.5);
+        }
+        
+        .gift-card-3d {
+            transform-style: preserve-3d;
+            animation: rotate3d 10s linear infinite;
+        }
+        
+        @keyframes rotate3d {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+        
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+        
+        .glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073; }
+            to { box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6; }
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #f0f;
+            animation: confetti-fall 3s linear infinite;
+        }
+        
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 overflow-x-hidden">
+    <!-- Confetti Animation -->
+    <div class="fixed inset-0 pointer-events-none z-10">
+        <div class="confetti" style="left: 10%; animation-delay: 0s; background: #ff6b6b;"></div>
+        <div class="confetti" style="left: 20%; animation-delay: 0.5s; background: #4ecdc4;"></div>
+        <div class="confetti" style="left: 30%; animation-delay: 1s; background: #45b7d1;"></div>
+        <div class="confetti" style="left: 40%; animation-delay: 1.5s; background: #f9ca24;"></div>
+        <div class="confetti" style="left: 50%; animation-delay: 2s; background: #f0932b;"></div>
+        <div class="confetti" style="left: 60%; animation-delay: 2.5s; background: #eb4d4b;"></div>
+        <div class="confetti" style="left: 70%; animation-delay: 3s; background: #6ab04c;"></div>
+        <div class="confetti" style="left: 80%; animation-delay: 3.5s; background: #130f40;"></div>
+        <div class="confetti" style="left: 90%; animation-delay: 4s; background: #535c68;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 backdrop-blur-md bg-opacity-90">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-12 h-12 bg-gradient-to-r from-green-400 to-blue-500 rounded-xl flex items-center justify-center transform hover:rotate-12 transition-transform">
+                        <i class="fas fa-dollar-sign text-white text-2xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"> Hulu Card Now Giveaway</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="text-sm text-gray-600 bg-green-100 px-3 py-1 rounded-full">
+                        <i class="fas fa-shield-alt text-green-500 mr-1"></i>
+                        Secure & Verified
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="sparkle" style="left: 5%; animation-delay: 0s;"></div>
+            <div class="sparkle" style="left: 15%; animation-delay: 0.3s;"></div>
+            <div class="sparkle" style="left: 25%; animation-delay: 0.6s;"></div>
+            <div class="sparkle" style="left: 35%; animation-delay: 0.9s;"></div>
+            <div class="sparkle" style="left: 45%; animation-delay: 1.2s;"></div>
+            <div class="sparkle" style="left: 55%; animation-delay: 1.5s;"></div>
+            <div class="sparkle" style="left: 65%; animation-delay: 1.8s;"></div>
+            <div class="sparkle" style="left: 75%; animation-delay: 2.1s;"></div>
+            <div class="sparkle" style="left: 85%; animation-delay: 2.4s;"></div>
+            <div class="sparkle" style="left: 95%; animation-delay: 2.7s;"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="mb-8">
+                <span class="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-6 py-3 rounded-full text-lg font-bold inline-block pulse-animation shadow-lg">
+                    <i class="fas fa-fire mr-2"></i>🎉 LIMITED TIME OFFER 🎉
+                </span>
+            </div>
+            
+            <h1 class="text-6xl md:text-7xl font-black mb-6 float-animation text-white drop-shadow-2xl">
+                Win a <span class="rainbow-text"> $100 Hulu Card</span>  Hulu Card Now
+            </h1>
+            
+            <p class="text-2xl md:text-3xl mb-10 text-white drop-shadow-lg">
+                <i class="fas fa-bolt text-yellow-300 mr-2"></i>Instant Delivery 
+                <span class="mx-4">•</span> 
+                <i class="fas fa-gift text-pink-300 mr-2"></i>No Purchase Required 
+                <span class="mx-4">•</span> 
+                <i class="fas fa-users text-green-300 mr-2"></i>Limited Spots
+            </p>
+            
+            <div class="bg-white/30 backdrop-blur-md rounded-3xl p-10 max-w-3xl mx-auto mb-10 neon-border">
+                <div class="flex items-center justify-center space-x-8 mb-6">
+                    <div class="text-center">
+                        <div class="text-5xl font-black countdown bg-white/20 rounded-xl px-4 py-2" id="hours">00</div>
+                        <div class="text-lg font-semibold mt-2">HOURS</div>
+                    </div>
+                    <div class="text-5xl font-black">:</div>
+                    <div class="text-center">
+                        <div class="text-5xl font-black countdown bg-white/20 rounded-xl px-4 py-2" id="minutes">00</div>
+                        <div class="text-lg font-semibold mt-2">MINUTES</div>
+                    </div>
+                    <div class="text-5xl font-black">:</div>
+                    <div class="text-center">
+                        <div class="text-5xl font-black countdown bg-white/20 rounded-xl px-4 py-2" id="seconds">00</div>
+                        <div class="text-lg font-semibold mt-2">SECONDS</div>
+                    </div>
+                </div>
+                <p class="text-xl font-semibold">⏰ OFFER ENDS IN:</p>
+            </div>
+            
+            <a href="https://singingfiles.com/show.php?l=0&u=2418412&id=71508">
+  <button onclick="scrollToGenerate()" class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-black py-5 px-16 rounded-full text-2xl transform hover:scale-110 transition-all duration-300 shadow-2xl shimmer glow">
+    <i class="fas fa-rocket mr-3"></i>CLAIM MY $100 Hulu Card NOW!
+  </button>
+</a>
+
+            
+            <div class="mt-10 flex flex-wrap items-center justify-center gap-6 text-lg">
+                <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full">
+                    <i class="fas fa-users text-green-300 mr-2"></i>2,847 Winners Today
+                </span>
+                <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full">
+                    <i class="fas fa-check-circle text-green-300 mr-2"></i>100% Legit
+                </span>
+                <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full">
+                    <i class="fas fa-trophy text-yellow-300 mr-2"></i>98% Success Rate
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="py-12 bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">
+        <div class="container mx-auto px-4">
+            <div class="bg-white/20 backdrop-blur-md rounded-3xl p-8 text-center text-white">
+                <div class="flex flex-wrap items-center justify-center gap-6">
+                    <div class="flex items-center space-x-3 bg-white/20 backdrop-blur px-6 py-3 rounded-full">
+                        <i class="fas fa-fire text-4xl text-yellow-300 bounce"></i>
+                        <span class="text-xl font-bold">🔥 HOT DEAL ALERT!</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white/20 backdrop-blur px-6 py-3 rounded-full">
+                        <i class="fas fa-clock text-3xl text-red-300 pulse-animation"></i>
+                        <span class="text-xl font-bold">Only 50 cards left today!</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white/20 backdrop-blur px-6 py-3 rounded-full">
+                        <i class="fas fa-trophy text-3xl text-yellow-300"></i>
+                        <span class="text-xl font-bold">Win rate: 98%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card Generate Section -->
+    <section id="generate" class="py-24 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-black mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    Claim Your  $100 Hulu Card Now
+                </h2>
+                <p class="text-2xl text-gray-700">Click the claim button to get your  $100 Hulu Card Now  Hulu Card Now instantly!</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 rounded-3xl p-12 text-center shadow-2xl transform hover:scale-105 transition-all duration-500 neon-border">
+                    <div class="mb-10">
+                        <div class="gift-card-3d inline-block">
+                            <div class="bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 rounded-2xl p-2 shadow-2xl">
+                                <div class="bg-gradient-to-br from-gray-900 to-gray-700 rounded-xl p-8 w-80 h-48 flex flex-col items-center justify-center relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent"></div>
+                                    <div class="relative z-10">
+                                        <div class="text-3xl font-black mb-3 text-yellow-300"> Hulu Card Now</div>
+                                        <div class="text-7xl font-black mb-3 text-white drop-shadow-lg"> $100 Hulu Card Now</div>
+                                        <div class="text-lg font-semibold text-gray-300"> $100 Hulu Card Now</div>
+                                    </div>
+                                    <div class="absolute bottom-4 right-4 w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-dollar-sign text-white text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <p class="text-white text-2xl font-bold mb-3">🎁 Your  $100 Hulu Card Now is ready to claim!</p>
+                        <p class="text-white/90 text-lg">No personal information required • Instant delivery</p>
+                    </div>
+                    
+                    <a href="https://singingfiles.com/show.php?l=0&u=2418412&id=71508">
+                    <button onclick="claimGiftCard()" class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-black py-5 px-16 rounded-full text-2xl transform hover:scale-110 transition-all duration-300 shadow-2xl shimmer glow w-full">
+                      <i class="fas fa-gift mr-3"></i>CLAIM MY $1000Hulu Card NOW!
+                        </button>
+                            </a>
+                    
+                    <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-white/90 text-lg">
+                        <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full">
+                            <i class="fas fa-lock mr-2"></i>Secure Claim
+                        </span>
+                        <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full">
+                            <i class="fas fa-bolt mr-2"></i>Instant Delivery
+                        </span>
+                        <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full">
+                            <i class="fas fa-check-circle mr-2"></i>No Purchase
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lucky Win Section -->
+    <section class="py-24 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-black mb-6 text-white">Recent Lucky Winners</h2>
+                <p class="text-2xl text-white/90">Join thousands of happy winners!</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white/20 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-6">
+                        <img src="https://picsum.photos/seed/winner1/60/60.jpg" alt="Winner" class="w-16 h-16 rounded-full mr-4 border-4 border-yellow-400">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Sarah Johnson</h4>
+                            <p class="text-white/80">Won 2 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-4xl font-black text-yellow-300"> $100 Hulu Card Now</span>
+                        <span class="bg-green-500 text-white px-4 py-2 rounded-full font-bold">✓ Delivered</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white/20 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-6">
+                        <img src="https://picsum.photos/seed/winner2/60/60.jpg" alt="Winner" class="w-16 h-16 rounded-full mr-4 border-4 border-yellow-400">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Mike Chen</h4>
+                            <p class="text-white/80">Won 5 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-4xl font-black text-yellow-300"> $100 Hulu Card Now</span>
+                        <span class="bg-green-500 text-white px-4 py-2 rounded-full font-bold">✓ Delivered</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white/20 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-6">
+                        <img src="https://picsum.photos/seed/winner3/60/60.jpg" alt="Winner" class="w-16 h-16 rounded-full mr-4 border-4 border-yellow-400">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Emma Davis</h4>
+                            <p class="text-white/80">Won yesterday</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-4xl font-black text-yellow-300"> $100 Hulu Card Now</span>
+                        <span class="bg-green-500 text-white px-4 py-2 rounded-full font-bold">✓ Delivered</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button onclick="scrollToGenerate()" class="bg-white text-purple-600 font-bold py-4 px-12 rounded-full text-xl transform hover:scale-110 transition-all duration-300 shadow-2xl">
+                    <i class="fas fa-dice mr-3"></i>Try Your Luck Now!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Reviews Section -->
+    <section class="py-24 bg-gradient-to-br from-yellow-50 via-pink-50 to-purple-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-black mb-6 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                    Trusted by Thousands
+                </h2>
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <div class="flex text-yellow-400 text-2xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-800">4.9/5 Rating</span>
+                </div>
+                <p class="text-xl text-gray-700">Based on 12,847 reviews</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-6">
+                        <img src="https://picsum.photos/seed/review1/50/50.jpg" alt="Reviewer" class="w-14 h-14 rounded-full mr-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800">Alex Thompson</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-lg">"Amazing! Received my  $100 Hulu Card Now  $100 Hulu Card Now within minutes. The process was super easy and straightforward. Highly recommend!"</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-6">
+                        <img src="https://picsum.photos/seed/review2/50/50.jpg" alt="Reviewer" class="w-14 h-14 rounded-full mr-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800">Lisa Rodriguez</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-lg">"I was skeptical at first, but it really works! Got my  $100 Hulu Card Now and used it right away. Thank you so much!"</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-6">
+                        <img src="https://picsum.photos/seed/review3/50/50.jpg" alt="Reviewer" class="w-14 h-14 rounded-full mr-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800">James Wilson</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-lg">"Best giveaway site I've ever used. Fast, reliable, and actually delivers what they promise. 10/10!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-24 bg-gradient-to-r from-purple-600 via-pink-600 to-red-600">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-black mb-8 text-white">Don't Miss Out!</h2>
+            <p class="text-2xl mb-10 text-white/90">This limited-time offer won't last long. Claim your  $100 Hulu Card Now  Hulu Card Now now!</p>
+            <div class="bg-white/20 backdrop-blur-md rounded-3xl p-10 max-w-3xl mx-auto mb-10 neon-border">
+                <div class="flex items-center justify-center space-x-12 mb-8">
+                    <div class="text-center">
+                        <div class="text-6xl font-black text-yellow-300" id="remainingCards">47</div>
+                        <div class="text-xl font-semibold text-white">Cards Left</div>
+                    </div>
+                    <div class="text-6xl font-black text-white">|</div>
+                    <div class="text-center">
+                        <div class="text-6xl font-black text-green-300">98%</div>
+                        <div class="text-xl font-semibold text-white">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="scrollToGenerate()" class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-black py-5 px-16 rounded-full text-2xl transform hover:scale-110 transition-all duration-300 shadow-2xl shimmer glow">
+                <i class="fas fa-gift mr-3"></i>CLAIM MY  $100 Hulu Card Now  $100 Hulu Card Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-r from-gray-900 to-black text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-400 to-blue-500 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-dollar-sign text-white text-2xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">CashApp Giveaway</span>
+                    </div>
+                    <p class="text-gray-400 text-lg">Your trusted source for  Hulu Card Now giveaways.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition text-lg">How It Works</a></li>
+                        <li><a href="#" class="hover:text-white transition text-lg">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition text-lg">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition text-lg">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-white">Support</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition text-lg">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition text-lg">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition text-lg">Live Chat</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-white">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform">
+                            <i class="fab fa-facebook-f text-white text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl flex items-center justify-center hover:scale-110 transition-transform">
+                            <i class="fab fa-twitter text-white text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center hover:scale-110 transition-transform">
+                            <i class="fab fa-instagram text-white text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform">
+                            <i class="fab fa-youtube text-white text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p class="text-lg">&copy; 2024 CashApp Giveaway. All rights reserved. | This is a promotional giveaway site.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <button onclick="scrollToGenerate()" class="fixed bottom-8 right-8 bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white w-20 h-20 rounded-full shadow-2xl flex items-center justify-center transform hover:scale-110 transition-all duration-300 z-40 glow">
+        <i class="fas fa-gift text-3xl"></i>
+    </button>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const endTime = new Date();
+            endTime.setHours(23, 59, 59);
+            
+            const diff = endTime - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Remaining Cards Animation
+        function updateRemainingCards() {
+            const cardsElement = document.getElementById('remainingCards');
+            let currentCards = parseInt(cardsElement.textContent);
+            
+            if (currentCards > 0 && Math.random() > 0.7) {
+                cardsElement.textContent = currentCards - 1;
+            }
+        }
+        
+        setInterval(updateRemainingCards, 5000);
+        
+        // Scroll to Generate Section
+        function scrollToGenerate() {
+            document.getElementById('generate').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Claim  $100 Hulu Card Now Function
+        function claimGiftCard() {
+            // Show loading state
+            const button = event.target;
+            const originalText = button.innerHTML;
+            button.innerHTML = '<i class="fas fa-spinner fa-spin mr-3"></i>Processing...';
+            button.disabled = true;
+            
+            // Simulate processing
+            setTimeout(() => {
+                // Show success message
+                alert('🎉 Congratulations! Your  $100 Hulu Card Now  Hulu Card Now has been claimed. Check your email for delivery instructions!');
+                
+                // Reset button
+                button.innerHTML = originalText;
+                button.disabled = false;
+                
+                // Update remaining cards count
+                const cardsElement = document.getElementById('remainingCards');
+                let currentCards = parseInt(cardsElement.textContent);
+                if (currentCards > 0) {
+                    cardsElement.textContent = currentCards - 1;
+                }
+            }, 2000);
+        }
+        
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
